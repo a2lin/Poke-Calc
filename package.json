@@ -1,0 +1,10 @@
+{
+	"name": "poke-calc",
+	"preferGlobal": true,
+	"version": "0.1.0",
+	"author": "a2lin <lin.alexander.2011@gmail.com>",
+	"description": "a simple application to retrieve relevant data for pokemon showdown",
+	"dependencies": {
+		"express": "3.x"
+	}
+}
