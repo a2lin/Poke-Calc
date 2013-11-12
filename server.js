@@ -2,6 +2,16 @@ var express = require('express');
 var server = express();
 var battlechart = require('./typechart');
 
+server.get('/', function (req, res) {
+res.sendfile(__dirname + '/shittyui.html');
+});
+server.get('/shittyui.css', function (req, res) {
+res.sendfile(__dirname + '/shittyui.css');
+});
+server.get('/shittyui.js', function (req, res) {
+res.sendfile(__dirname + '/shittyui.js');
+});
+
 server.get('/type/:movetype/:type1/:type2', function(req, res){
 	res.send(''+calcType(req.params.movetype, req.params.type1, req.params.type2));
 });
